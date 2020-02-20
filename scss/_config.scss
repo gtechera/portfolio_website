@@ -6,3 +6,14 @@ $dark-color: #333;
 $medium-color: #ccc;
 $bg-img: url("../img/showcase2.jpg");
 $semidark-color: #3f3d3d;
+
+//Set text color
+@function set-text-color($color) {
+    @if(lightness($color)>50) {
+        @return #000;
+    }
+
+    @else {
+        @return #fff;
+    }
+}
