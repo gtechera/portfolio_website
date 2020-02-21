@@ -28,6 +28,22 @@ a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background-color: #ffbc00; }
 
+.bg-main {
+  background: #ffbc00;
+  color: #fff; }
+
+.bg-dark {
+  background: #333;
+  color: #fff; }
+
+.bg-light {
+  background: #f4f4f4;
+  color: #000; }
+
+.bg-medium {
+  background: #ccc;
+  color: #000; }
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
@@ -114,6 +130,7 @@ img {
   justify-content: space-between;
   padding-top: 1rem; }
   #main-nav #main-logo {
+    color: #fff;
     font-size: 2rem; }
   #main-nav ul {
     display: flex; }
@@ -149,6 +166,11 @@ img {
       font-size: 4rem;
       line-height: 1.2;
       margin-bottom: 4rem; }
+
+#header-inner {
+  background: url("../img/showcase2.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00; }
 
 #home-a .specials {
   margin-top: 3rem;
@@ -212,3 +234,35 @@ img {
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
         background: #ffbc00; }
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: "bioimage bio bio";
+  grid-gap: 1.2rem; }
+  #about-a .about-info .bio-image {
+    grid-area: bioimage; }
+  #about-a .about-info .bio {
+    grid-area: bio;
+    border-left: 3px solid #ffbc00;
+    padding: 0.8rem; }
+
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem; }
+  #about-b .progress div {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #ffbc00; }
+
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 2rem;
+  text-align: center; }
+
+#about-c img {
+  width: 70%; }
