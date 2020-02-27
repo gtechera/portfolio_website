@@ -285,7 +285,7 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-template-areas: "name email" "subject phone" "message message";
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
@@ -386,5 +386,42 @@ img {
     height: 10rem; }
   #home-a .specials,
   #home-b .process,
+  #contact-b .contact-info,
   .items {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  #home-a .specials div {
+    border-bottom: 1px #f4f4f4 solid;
+    padding-bottom: 1rem; }
+    #home-a .specials div:last-child {
+      border: none;
+      padding-bottom: 0; }
+  #about-a .about-info {
+    grid-template-areas: "bioimage" "bio"; }
+  #contact-a .text-fields {
+    grid-template-areas: "name" "subject" "email" "phone" "message"; }
+  #contact-b .contact-info div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #555 solid; }
+    #contact-b .contact-info div:last-child {
+      border: none;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+  #contact-c h1 {
+    font-size: 2rem; }
+  #main-footer {
+    height: 7rem; }
+    #main-footer .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem; }
+      #main-footer .footer-content .social {
+        margin-top: 0.3rem; } }
+
+@media (max-height: 580px) {
+  #header-home .header-content {
+    padding-top: 2.5rem; } }
+
+@media (max-height: 330px) {
+  #header-home .header-content h1 {
+    font-size: 2rem; } }

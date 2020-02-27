@@ -185,9 +185,9 @@ img {
     .text-fields {
       display: grid;
       grid-template-areas:
-        'name email'
-        'subject phone'
-        'message message';
+        "name email"
+        "subject phone"
+        "message message";
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
 
@@ -215,13 +215,11 @@ img {
       .text-input {
         padding: 0.5rem 1rem;
       }
-
     }
 
     button[type="submit"] {
       width: 50%;
     }
-
   }
 
   &-b {
@@ -237,10 +235,8 @@ img {
       text-align: center;
       font-size: 4rem;
     }
-
   }
 }
-
 
 #main-footer {
   background: $dark-color;
@@ -322,4 +318,4 @@ img {
 }
 
 //Import media queries
-@import 'media';
+@import "media";

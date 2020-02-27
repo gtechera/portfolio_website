@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (validate_name($name) && validate_email($email)) {
       mail($admin_email, $subject, $message, "From:" . $email);
     
-      header('Location: https://techera.dev/gtechera/success.html');
+      header('Location: https://techera.dev/gtechera/portfolio_website/success.html');
     } 
 
   }
